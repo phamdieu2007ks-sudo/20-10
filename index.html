@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Một điều nhỏ dành cho Oanh 💗</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MÀN HÌNH NHẬP MẬT KHẨU -->
+    <section id="lock-screen" class="screen">
+        <div class="stars"></div>
+        <div class="lock-card">
+            <div class="cute-icon">🐰</div>
+            <p class="small-title">Có một điều đặc biệt</p>
+            <h1>đang chờ Oăn...</h1>
+            <div class="lock">🔐</div>
+            <p class="hint">Nhập mật khẩu để mở món quà nhỏ này nhé</p>
+
+            <input id="password" type="password" maxlength="4" inputmode="numeric"
+                   placeholder="Nhập mật khẩu..." autocomplete="off">
+            <button class="main-btn" id="unlock-btn">Mở cửa 💗</button>
+            <p id="error-message" class="error-message"></p>
+            <p class="password-hint">Gợi ý: Sinh nhật của người đáng iu nhất thế giới ✨</p>
+        </div>
+    </section>
+
+    <!-- WEBSITE CHÍNH -->
+    <main id="main-site" class="hidden">
+
+        <header class="navbar">
+            <a href="#home" class="logo">♡ for you</a>
+            <button class="menu-btn" id="menu-btn">☰</button>
+            <nav id="nav">
+                <a href="#home">Trang chủ</a>
+                <a href="#gallery">Ảnh</a>
+                <a href="#letter">Lời nhắn</a>
+                <a href="#wishes">Lời chúc</a>
+                <a href="#gift">Quà nhỏ</a>
+                <a href="#oct20">20-10</a>
+            </nav>
+        </header>
+
+        <!-- TRANG CHỦ -->
+        <section id="home" class="hero section">
+            <div class="floating-heart heart-1">♥</div>
+            <div class="floating-heart heart-2">♡</div>
+            <div class="floating-heart heart-3">♥</div>
+
+            <div class="hero-content">
+                <p class="eyebrow">A LITTLE SURPRISE FOR YOU ✨</p>
+                <h1>Chào em,<br><span>cô gái đặc biệt</span></h1>
+                <p class="hero-text">
+                    Có một món quà nhỏ Dieo làm riêng để Oăn mở vào một ngày thật xinh.
+                    Không cầu kỳ đâu, chỉ là một chút yêu thương được gom lại thành một trang web. 💗
+                </p>
+                <div class="hero-buttons">
+                    <a href="#gallery" class="main-btn">Bắt đầu nhé ♡</a>
+                    <a href="#letter" class="ghost-btn">Có thư cho Oăn 💌</a>
+                </div>
+                <div class="scroll-note">↓ kéo xuống xem tiếp ↓</div>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="moon">🌙</div>
+                <div class="cloud cloud-a">☁️</div>
+                <div class="cloud cloud-b">☁️</div>
+                <div class="flower flower-a">🌷</div>
+                <div class="flower flower-b">🌸</div>
+            </div>
+        </section>
+
+        <!-- ẢNH -->
+        <section id="gallery" class="section gallery-section">
+            <div class="section-heading">
+                <p class="eyebrow">OUR LITTLE MOMENTS</p>
+                <h2>Những khoảnh khắc <span>của chúng ta</span></h2>
+                <p> Những tấm ảnh siêu cấp đáng yêu của Kim Oanh nhó!! 📸</p>
+            </div>
+
+            <div class="photo-grid">
+                <figure class="photo-card card-a">
+                    <img src="images/photo1.jpg" alt="Ảnh kỷ niệm 1">
+                    <figcaption>Đáng iu thế nhò ♡</figcaption>
+                </figure>
+                <figure class="photo-card card-b">
+                    <img src="images/photo2.jpg" alt="Ảnh kỷ niệm 2">
+                    <figcaption>Một ngày thật vui 🌷</figcaption>
+                </figure>
+                <figure class="photo-card card-c">
+                    <img src="images/photo3.jpg" alt="Ảnh kỷ niệm 3">
+                    <figcaption>Cứ bình yên thế này nhé</figcaption>
+                </figure>
+                <figure class="photo-card card-d">
+                    <img src="images/photo4.jpg" alt="Ảnh kỷ niệm 4">
+                    <figcaption>Thêm một kỷ niệm 💗</figcaption>
+                </figure>
+                <figure class="photo-card card-e">
+                    <img src="images/photo5.jpg" alt="Ảnh kỷ niệm 5">
+                    <figcaption>Tấm cuối cùng... nhưng chưa phải kết thúc ✨</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- LỜI NHẮN -->
+        <section id="letter" class="section letter-section">
+            <div class="letter-wrap">
+                <div class="letter-icon">💌</div>
+                <p class="eyebrow">A LETTER FOR YOU</p>
+                <h2>Lời nhắn dành cho Oăn</h2>
+                <div class="letter-paper">
+                    <p>Oanh à,</p>
+                    <p>
+                        Hôm nay là một ngày đặc biệt, nên Diệu muốn dành một chút thời gian
+                        để làm điều gì đó chỉ dành cho em.
+                    </p>
+                    <p>
+                        Diệu không giỏi nói những lời quá hoa mỹ, nên Diệu chọn cách đơn giản nhất:
+                        gom những điều muốn nói vào đây để em có thể đọc bất cứ lúc nào.
+                    </p>
+                    <p>
+                        Cảm ơn em vì đã xuất hiện, vì những cuộc trò chuyện, những tiếng cười
+                        và cả những ngày chúng ta chẳng cần làm gì đặc biệt nhưng vẫn thấy vui.
+                    </p>
+                    <p>
+                        Mong rằng những ngày phía trước của em sẽ luôn có thật nhiều điều đáng yêu,
+                        nhiều niềm vui và những người luôn trân trọng em.
+                    </p>
+                    <p class="signature">Một chút yêu thương từ Diệu ♡</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LỜI CHÚC -->
+        <section id="wishes" class="section wishes-section">
+            <div class="section-heading">
+                <p class="eyebrow">20 • 10</p>
+                <h2>Những lời chúc <span>dành cho em</span></h2>
+                <p>Bấm từng chiếc một để mở lời chúc nhé.</p>
+            </div>
+
+            <div class="wish-grid">
+                <button class="wish-card" data-message="Chúc em luôn khỏe mạnh, luôn có đủ năng lượng để làm những điều mình thích. 🌷">
+                    <span>💗</span><strong>Sức khỏe</strong><small>Bấm để mở</small>
+                </button>
+                <button class="wish-card" data-message="Chúc em luôn vui, cười thật nhiều và có thật nhiều ngày mà em cảm thấy mình được yêu thương. 😊">
+                    <span>🌸</span><strong>Niềm vui</strong><small>Bấm để mở</small>
+                </button>
+                <button class="wish-card" data-message="Chúc em gặp thật nhiều may mắn, kể cả trong những chuyện nhỏ nhất của cuộc sống. 🍀">
+                    <span>🍀</span><strong>May mắn</strong><small>Bấm để mở</small>
+                </button>
+                <button class="wish-card" data-message="Chúc em luôn tự tin và đạt được những điều em đang cố gắng. Anh tin em làm được. ✨">
+                    <span>⭐</span><strong>Thành công</strong><small>Bấm để mở</small>
+                </button>
+                <button class="wish-card" data-message="Và quan trọng nhất: mong em luôn là chính mình, vì em không cần phải trở thành ai khác để trở nên đặc biệt. 💕">
+                    <span>🫶</span><strong>Là chính mình</strong><small>Bấm để mở</small>
+                </button>
+            </div>
+        </section>
+
+        <!-- QUÀ NHỎ -->
+        <section id="gift" class="section gift-section">
+            <div class="section-heading">
+                <p class="eyebrow">A FEW LITTLE THINGS</p>
+                <h2>Oăn muốn <span>món quà nào?</span> 🎁</h2>
+                <p>Những món quà Oăn có thể lựa chọn để mình cùng làm với nhau. 😌</p>
+            </div>
+
+            <div class="gift-grid">
+                <button class="gift-card" data-message="🎵 Một playlist chỉ để nghe lúc nhớ nhau.">
+                    <span>🎵</span><strong>Nghe nhạc cùng nhau</strong>
+                </button>
+                <button class="gift-card" data-message="🍰 Một buổi đi ăn thật ngon, em chọn món nhé!">
+                    <span>🍰</span><strong>Đi ăn thật ngon</strong>
+                </button>
+                <button class="gift-card" data-message="📸 Đi chụp thật nhiều ảnh để lần sau lại có thêm ảnh bỏ vào website này.">
+                    <span>📸</span><strong>Đi chụp ảnh</strong>
+                </button>
+                <button class="gift-card" data-message="🌷 Một bó hoa xinh xinh, vì ngày đặc biệt thì phải có hoa chứ.">
+                    <span>🌷</span><strong>Một bó hoa</strong>
+                </button>
+                <button class="gift-card" data-message="💗 Một ngày không cần kế hoạch, chỉ cần cùng nhau vui vẻ.">
+                    <span>💗</span><strong>Một ngày thật vui</strong>
+                </button>
+                <button class="gift-card" data-message="✨ Món quà cuối cùng: em tự chọn điều mình thích nhé.">
+                    <span>✨</span><strong>Em tự chọn</strong>
+                </button>
+            </div>
+        </section>
+
+        <!-- 20-10 -->
+        <section id="oct20" class="section oct-section">
+            <div class="oct-card">
+                <div class="bouquet">💐</div>
+                <p class="eyebrow">HAPPY VIETNAMESE WOMEN'S DAY</p>
+                <h2>Chúc Oanh một ngày <span>20-10 thật vui!</span></h2>
+                <p>
+                    Chúc cô gái của hôm nay luôn được yêu thương, được trân trọng,
+                    được làm những điều mình thích và luôn giữ được nụ cười thật xinh.
+                </p>
+                <button class="main-btn" id="surprise-btn">Bấm vào đây có bất ngờ ✨</button>
+            </div>
+        </section>
+
+        <!-- KẾT -->
+        <section class="final-section">
+            <div class="final-content">
+                <div class="cute-icon">🐰</div>
+                <p class="eyebrow">THANK YOU FOR BEING HERE</p>
+                <h2>Cảm ơn Oanh<br><span>đã luôn ở đây.</span></h2>
+                <p>Trang web chưa có hoàn hảo, mong em vẫn bên anh đến ngày anh hoàn thiện trong mắt em. 💗</p>
+                <button class="ghost-btn" id="top-btn">↑ Về đầu trang</button>
+            </div>
+        </section>
+
+        <footer>
+            Made with ♡ for a very special person • 20.10
+        </footer>
+    </main>
+
+    <!-- POPUP -->
+    <div class="modal hidden" id="modal">
+        <div class="modal-box">
+            <button class="close-modal" id="close-modal">×</button>
+            <div class="modal-icon">💗</div>
+            <p id="modal-text"></p>
+            <button class="main-btn" id="modal-ok">Dễ thương quá ♡</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
